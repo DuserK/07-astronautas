@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronautas</title>
     <style>
+        body{
+            margin: 0;
+        }
         header,
         main,
         footer {
@@ -13,9 +16,35 @@
             margin-left: calc((100% - 800px) / 2);
         }
         header{
-            background-color: pink;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
+        img{
+        height: 40px;
+        width: 100px;
+        object-fit:contain;
+        object-position: left;
+        }
+        nav{
+            display: flex;
+            gap: 30px;
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;    
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
         main{
+            margin-bottom: 40px;
             background-color: aqua;
         }
         footer{
@@ -25,7 +54,15 @@
     </style>
 </head>
 <body>
-    <header>HEADER</header>
+    <header>
+        <img src="./logo_clay.png" alt="Logo">
+        <nav>
+            <a href="">About</a>
+            <a href="">Portfolio</a>
+            <a href="">Job</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
     <main>MAIN</main>
     <footer>FOOTER</footer>
 </body>
