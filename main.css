@@ -47,29 +47,40 @@ div{
     width: 40%;
 }
 h1{
-  
+  font-weight: bold;
+  font-size: 45px;
 }
 span{
     display: block;
     font-weight: lighter;
 }
 p{
-  
+  color: gray;
+  font-weight: lighter;
+  font-size: 14px;
 }
 div>a{
-    background-color: rgb(102, 44, 140);
+    background-color: #662c8c;
+    border: #662c8c 2px solid;
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
     font-weight: bold;
-    font-size: 15px;
-    padding: 20px;
-    border-radius: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    float: left;
+    margin: 0.5em;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1em;
+    padding: 1em;
+    border-radius: 1.6em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    
 }
-
+div>a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #662c8c;
+}
 main>img{
     width: 60%;
 
