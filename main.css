@@ -2,13 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-header,
-main,
-footer {
+
+.container{
     width: 800px;
     margin-left: calc((100% - 800px) / 2);
 }
-header{
+
+.main-header{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -16,52 +16,65 @@ header{
     margin-top: 20px;
     margin-bottom: 40px;
 }
-header>img{
+
+.logo{
     height: 40px;
     width: 100px;
     object-fit:contain;
     object-position: left;
 }
-nav{
+.main-nav{
     display: flex;
     gap: 30px;
 }
-nav>a{
+
+.main-nav > .link{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;    
 }
-nav>a:hover{
+
+.main-nav > .link:hover{
     text-decoration: underline;
 }
 
-main{
+.main-content{
     display: flex;
     align-items: center;
     gap: 20px;
-    display: flex;
     margin-bottom: 40px;
 }
-div{
+
+.left-column{
     width: 40%;
 }
-h1{
-  font-weight: bold;
+
+.title{
   font-size: 45px;
 }
-span{
+
+.title> span{
     display: block;
-    font-weight: lighter;
+    font-weight: normal;
 }
-p{
+.title::after{
+    content: ' ';
+    display: block;
+    background-color: #662c8c;
+    width: 100px;
+    height: 5px;
+}
+
+.description{
   color: gray;
   font-weight: lighter;
   font-size: 14px;
 }
-div>a{
+
+.btn{
     background-color: #662c8c;
-    border: #662c8c 2px solid;
+    border: #662c8c 0.1em solid;
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
@@ -69,7 +82,7 @@ div>a{
     float: left;
     margin: 0.5em;
     margin-left: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1em;
     padding: 1em;
     border-radius: 1.6em;
@@ -77,14 +90,34 @@ div>a{
     padding-right: 2.5em;
     
 }
-div>a:hover{
+
+.btn:hover{
     background-color: rgb(255, 255, 255);
     color: #662c8c;
 }
-main>img{
+
+.main-image{
     width: 60%;
 
 }
-footer{
-    background-color: coral;
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+}
+
+.social-link{
+    color:#662c8c;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.credits{
+    margin: 0;
 }
